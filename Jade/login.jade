@@ -1,0 +1,20 @@
+.page-login.rlp
+	.container
+		.login-wrapper.rlp-wrapper
+			.login-table.rlp-table
+				a(href="index.html")
+					img.login(src="assets/images/logo.png" alt='')
+				.login-title.rlp-title login to your edugate.com account!
+				.login-form.bg-w-form.rlp-form
+					.row
+						.col-md-12
+							label.control-label.form-label(for="regemail") email <span class="highlight">*</span>
+							input.form-control.form-input#regemail(type="email", placeholder="")
+							//p.help-block Warning !
+						.col-md-12
+							label.control-label.form-label(for="regpassword") password <span class="highlight">*</span>
+							input.form-control.form-input#regpassword(type="password", placeholder="")
+							// p.help-block Warning !
+				.login-submit
+					button.btn.btn-login.btn-green(type="submit", onclick="window.location.href='index.html'")
+						span sign in

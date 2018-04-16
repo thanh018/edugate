@@ -1,0 +1,138 @@
+{
+    "index": {
+        "title": "Home",
+        "nav": "Home",
+        "url_style": [
+            {
+            }
+        ],
+        "url_script": [
+            {
+            }
+        ]
+    },
+    "login": {
+        "title": "Login",
+        "nav": "Login",
+        "url_style": [
+            {
+            }
+        ],
+        "url_script": [
+            {
+            }
+        ]
+    },
+    "register": {
+        "title": "Register",
+        "nav": "Register",
+        "url_style": [
+            {
+            }
+        ],
+        "url_script": [
+            {
+            }
+        ]
+    },
+    "homepage-02": {
+        "title": "ver 02",
+        "nav": "ver 02",
+        "url_style": [
+            {
+            }
+        ],
+        "url_script": [
+            {
+            }
+        ]
+    },
+    "homepage-03": {
+        "title": "ver 03",
+        "nav": "ver 03",
+        "url_style": [
+            {
+            }
+        ],
+        "url_script": [
+            {
+            }
+        ]
+    },
+    "about-us": {
+        "title": "About Us",
+        "nav": "About Us page",
+        "url_style":[
+        ],
+        "url_script":[
+            {
+            }
+        ]
+    },
+    "categories": {
+        "title": "Categories",
+        "nav": "Categories page",
+        "url_style":[
+        ],
+        "url_script":[
+            {
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contact",
+        "nav": "Contact page",
+        "url_style":[
+        ],
+        "url_script":[
+            {
+                "src":"https://maps.googleapis.com/maps/api/js?key=AIzaSyAu6tm60TzeUo9rWpLnrQ7mrFn4JPMVje4&amp;sensor=false"
+            },
+            {
+                "src":"assets/js/pages/contact.js"
+            }
+        ]
+    },
+    "courses": {
+        "title": "Courses",
+        "nav": "Courses page",
+        "url_style":[
+        ],
+        "url_script":[
+            {
+
+            }
+        ]
+    },
+
+    "news": {
+        "title": "News",
+        "nav": "News page",
+        "url_style":[
+        ],
+        "url_script":[
+            {
+            }
+        ]
+    },
+    "news-detail": {
+        "title": "News Detail",
+        "nav": "News Detail page",
+        "url_style":[
+        ],
+        "url_script":[
+            {
+            }
+        ]
+    },
+    "courses-detail": {
+        "title": "Courses Detail",
+        "nav": "COurses Detail page",
+        "url_style":[
+        ],
+        "url_script":[
+            {
+            }
+        ]
+    }
+}

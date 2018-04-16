@@ -1,0 +1,62 @@
+.section.background-opacity.page-title.set-height-top
+	.container
+		.page-title-wrapper
+			//.page-title-content
+			h2.captions
+				| news &amp; updates
+			ol.breadcrumb
+				li
+					a(href='index.html') Home
+				li
+					a(href='news.html') News
+				li.active
+					a(href='#') Detail
+.section.nav-subscribe
+	.container
+		.nav-subscribe-wrapper
+			.nav-subscribe-left
+				p.subscribe-text.news-detail-subscribe Constantly growing <b class="focus">theme</b> collection
+			.nav-subscribe-right
+				button.btn.btn-green.btn-bold
+					span PURCHASE THEME
+.section.section-padding.news-detail
+	.container
+		.news-detail-wrapper
+			.row
+				.col-md-9.col-sm-12
+					!=partial("_includes/news-detail")
+				.col-md-3.sidebar.col-sm-12
+					.row
+						.recent-post-widget.widget.col-sm-6.col-md-12.col-xs-6.sd380
+							.title-widget
+								| recent post
+							.content-widget
+								!=partial("_includes/recent-post-widget")
+						.popular-course-widget.widget.col-sm-6.col-md-12.col-xs-6.sd380
+							.title-widget
+								| popular courses
+							.content-widget
+								!=partial("_includes/popular-courses-widget")
+						.clearfix
+						.category-widget.widget.col-sm-6.col-md-12.col-xs-6.sd380
+							.title-widget
+								| categories
+							.content-widget
+								!=partial("_includes/categories-widget")
+						.tag-widget.widget.col-sm-6.col-md-12.col-xs-6.sd380
+							.title-widget
+								| tags
+							.content-widget
+								!=partial("_includes/tags-widget")
+						.clearfix
+						.archive-widget.widget.col-sm-6.col-md-12.col-xs-6.sd380
+							.title-widget
+								| archive
+							.content-widget
+								!=partial("_includes/archive-widget")
+						.share-widget.widget.col-sm-6.col-md-12.col-xs-6.sd380
+							.title-widget
+								| share this news
+							.content-widget
+								!=partial("_includes/share-widget")
+						.clearfix

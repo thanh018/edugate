@@ -1,0 +1,79 @@
+.section.background-opacity.page-title.set-height-top
+	.container
+		.page-title-wrapper
+			//.page-title-content
+			h2.captions
+				| Contact
+			ol.breadcrumb
+				li
+					a(href='index.html') Home
+				li.active
+					a(href='#') Contact
+.section.nav-subscribe
+	.container
+		.nav-subscribe-wrapper
+			.nav-subscribe-left
+				p.subscribe-text Subscribe <b class="focus">Edugate</b> to learn new creative skill
+			.nav-subscribe-right
+				button.btn.btn-green.btn-bold
+					span SUBSCRIBE NOW
+
+.section.section-padding.contact-main
+	.container
+		.contact-main-wrapper
+			.row.contact-method
+				.col-md-4
+					.method-item
+						i.fa.fa-map-marker
+						p.sub COME TO
+						.detail 
+							p 99 Barnard St - Suite 111
+							p United Kingdom
+				.col-md-4
+					.method-item
+						i.fa.fa-phone
+						p.sub CALL TO
+						.detail 
+							p Local: 1-800-123-hello
+							p Mobile: 1-800-123-hello
+				.col-md-4
+					.method-item
+						i.fa.fa-envelope
+						p.sub CONNECT TO
+						.detail 
+							p hello@edugate.com
+							p www.edugate.com
+			form.bg-w-form.contact-form
+				.row
+					.col-md-6
+						.form-group
+							label.control-label.form-label NAME <span class="highlight">*</span>
+							input.form-control.form-input(type="text", placeholder="")
+							//label.control-label.form-label.warning-label(for="") Warning for the above !
+					.col-md-6
+						.form-group
+							label.control-label.form-label EMAIL <span class="highlight">*</span>
+							input.form-control.form-input(type="text", placeholder="")
+							//label.control-label.form-label.warning-label(for="")
+					.col-md-6
+						.form-group
+							label.control-label.form-label PURPOSE
+							select.form-control.form-input
+								option(value="") Please Select
+								option(value="") example 1
+								option(value="") example 2
+								option(value="") example 3
+							//label.control-label.form-label.warning-label(for="", hidden)
+					.col-md-6
+						.form-group
+							label.control-label.form-label SUBJECT
+							input.form-control.form-input(type="text", placeholder="")
+							//label.control-label.form-label.warning-label(for="", hidden)
+					.col-md-12 
+						.contact-question.form-group
+							label.control-label.form-label HOW CAN WE HELP? <span class="highlight">*</span>
+							textarea.form-control.form-input
+				.contact-submit
+					button.btn.btn-contact.btn-green(type="submit")
+						span SUBMIT CONTACT
+#map.section.contact-map

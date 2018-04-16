@@ -1,0 +1,28 @@
+.page-register.rlp
+	.container
+		.register-wrapper.rlp-wrapper
+			.register-table.rlp-table
+				a(href="index.html")
+					img.login(src="assets/images/logo.png" alt='')
+				.register-title.rlp-title create your account and join with us!
+				.register-form.bg-w-form.rlp-form
+					.row
+						.col-md-6
+							label.control-label.form-label(for="regname") NAME <span class="highlight">*</span>
+							input.form-control.form-input#regname(type="text", placeholder="")
+							//p.help-block Warning !
+						.col-md-6
+							label.control-label.form-label(for="regemail") email <span class="highlight">*</span>
+							input.form-control.form-input#regemail(type="email", placeholder="")
+							// p.help-block Warning !
+						.col-md-6
+							label.control-label.form-label(for="regpassword") password <span class="highlight">*</span>
+							input.form-control.form-input#regpassword(type="password", placeholder="")
+							// p.help-block Warning !
+						.col-md-6
+							label.control-label.form-label(for="reregpassword") confirm password <span class="highlight">*</span>
+							input.form-control.form-input#reregpassword(type="password", placeholder="")
+							// p.help-block Warning !
+				.register-submit
+					button.btn.btn-register.btn-green(type="submit", onclick="window.location.href='index.html'")
+						span create account

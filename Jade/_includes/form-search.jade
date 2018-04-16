@@ -1,0 +1,16 @@
+.search-input
+   .container
+      .search-input-wrapper
+         form
+            select.form-select.style-1
+               option(value='all') all categories
+               option(value='languages') languages
+               option(value='science') science
+            select.form-select.style-2
+               option(value='price') price
+               option(value='datetime') datetime
+               option(value='teacher') teacher
+            input.form-input(type='text', placeholder='Do you want to learn today?')
+            button.form-submit.btn.btn-blue(type='submit')
+               span search now
+                  i.fa.fa-search

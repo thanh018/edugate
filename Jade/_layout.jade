@@ -1,0 +1,75 @@
+doctype
+html(lang="en")
+    head
+        title
+            | Edugate
+            = " | "
+            = title
+        meta(charset="utf-8")
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        // Font css
+        link(type="text/css", rel="stylesheet", href="assets/font/font-family/stylesheet.css")
+        link(type="text/css", rel="stylesheet", href="assets/font/font-icon/font-awesome-4.4.0/css/font-awesome.css")
+        link(type="text/css", rel="stylesheet", href="assets/font/font-icon/font-svg/css/Glyphter.css")
+        // Library css
+        link(type="text/css", rel="stylesheet", href="assets/libs/animate/animate.css")
+        link(type="text/css", rel="stylesheet", href="assets/libs/bootstrap-3.3.5/css/bootstrap.css")
+        link(type="text/css", rel="stylesheet", href="assets/libs/owl-carousel-2.0/assets/owl.carousel.css")
+        link(type="text/css", rel='stylesheet', href='assets/libs/fancybox/css/jquery.fancybox.css')
+        link(type="text/css", rel='stylesheet', href='assets/libs/fancybox/css/jquery.fancybox-buttons.css')
+        // style css
+        link(type="text/css", rel='stylesheet', href='assets/css/layout.css')
+        link(type="text/css", rel='stylesheet', href='assets/css/components.css')
+        link(type="text/css", rel='stylesheet', href='assets/css/responsive.css')
+    body
+        // HEADER
+        header
+            if (current.source == 'homepage-02')
+                != partial("_includes/header-02")
+            else if (current.source == 'homepage-03')
+                != partial("_includes/header-03")
+            else if((current.source == '404') || (current.source == 'login') || (current.source == 'register'))
+                // not include
+            else
+                != partial("_includes/header")
+        // WRAPPER
+        #wrapper-content
+            // PAGE WRAPPER
+            #page-wrapper
+                // MAIN CONTENT
+                .main-content
+                    // CONTENT
+                    .content
+                        != yield
+            // BUTTON BACK TO TOP
+            #back-top
+                a(href="#top")
+                    i.fa.fa-angle-double-up
+        // FOOTER
+        footer
+            if ((current.source != '404') && (current.source != 'login') && (current.source != 'register'))
+                != partial("_includes/footer")
+        .body-2.loading
+            .dots-loader
+        // JAVASCRIPT LIBS
+
+        script(src="assets/libs/jquery/jquery-2.1.4.min.js")
+        script(src="assets/libs/bootstrap-3.3.5/js/bootstrap.min.js")
+        script(src="assets/libs/smooth-scroll/jquery-smoothscroll.js")
+        script(src="assets/libs/owl-carousel-2.0/owl.carousel.min.js")
+        script(src="assets/libs/appear/jquery.appear.js")
+        script(src="assets/libs/count-to/jquery.countTo.js")
+        script(src="assets/libs/wow-js/wow.min.js")
+        script(src="assets/libs/isotope/isotope.pkgd.min.js")
+        script(src="assets/libs/fancybox/js/jquery.fancybox.js")
+        script(src="assets/libs/fancybox/js/jquery.fancybox-buttons.js")
+
+        // MAIN JS
+        script(src="assets/js/main.js")
+        // LOADING SCRIPTS FOR PAGE
+
+        for page, key in public._data
+            if(current.source == key)
+                for js in page.url_script
+                    if(js.src != undefined)
+                        script(src='#{js.src}')

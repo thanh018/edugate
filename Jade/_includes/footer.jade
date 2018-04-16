@@ -1,0 +1,57 @@
+.footer-top
+    .container
+        .footer-top-wrapper
+            
+            .footer-top-left
+                p.footer-top-focus BECOME AN INSTRUCTOR
+                p.footer-top-text Join thousand of instructors and earn money hassle free!
+            .footer-top-right
+                button.btn.btn-blue.btn-bold(onclick="window.location.href='contact.html'")
+                    span GET STARTED NOW
+.footer-main
+    .container
+        .footer-main-wrapper
+            .row
+                .col-2
+                    .col-md-3.col-sm-6.col-xs-6.sd380
+                        .edugate-widget.widget
+                            .title-widget
+                                | EDUGATE
+                            .content-widget
+                                !=partial("edugate-widget")
+                    .col-md-3.col-sm-6.col-xs-6.sd380
+                        .useful-link-widget.widget
+                            .title-widget
+                                | USEFUL LINKS
+                            .content-widget
+                                !=partial("useful-link-widget")
+                .col-2
+                    .col-md-3.col-sm-6.col-xs-6.sd380
+                        .gallery-widget.widget
+                            .title-widget
+                                | GALLERY
+                            .content-widget
+                                !=partial("gallery-widget")
+                    .col-md-3.col-sm-6.col-xs-6.sd380
+                        .mailing-widget.widget
+                            .title-widget
+                                | MAILING
+                            .content-wiget
+                                !=partial("mailing-widget")
+        .hyperlink
+            .pull-left.hyper-left
+                ul.list-inline
+                    li
+                        a(href="index.html") HOME
+                    li
+                        a(href="courses.html") COURSES
+                    li
+                        a(href="about-us.html") ABOUT
+                    li
+                        a(href="categories.html") PAGES
+                    li
+                        a(href="news.html") NEWS
+                    li
+                        a(href="contact.html") CONTACT
+            .pull-right.hyper-right
+                | @ SWLABS

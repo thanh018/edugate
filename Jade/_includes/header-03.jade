@@ -1,0 +1,90 @@
+.header-topbar.homepage-03
+   .container
+      .row
+         .col-md-5.topbar-left.text-left.info-text1
+            .email
+               a(href="#")
+                  i.topbar-icon.fa.fa-envelope-o
+                  span hello.shinway@gmail.com
+            .hotline
+               a(href="#")
+                  i.topbar-icon.fa.fa-phone
+                  span +84 909 015 345
+         .col-md-2.logo-topbar.info-text2
+            a(href='homepage-03.html')
+               img.img-responsive(src="assets/images/logo.png", alt="")
+         .col-md-5.topbar-right.text-right.info-text3
+            .group-sign-in
+               a(href="login.html").login
+                  | login
+               a(href="register.html").register
+                  | register
+.header-main.homepage-03
+   .container
+      .header-main-wrapper
+         .navbar-heade
+            .logo.pull-left
+               a.header-logo(href="#")
+                  img(src="assets/images/logo.png", alt="")
+            button.navbar-toggle.edugate-navbar(type='button', data-toggle='collapse', data-target='.navigation')
+               span.icon-bar
+               span.icon-bar
+               span.icon-bar
+         nav.navigation.collapse.navbar-collapse
+            ul.nav-links.nav.navbar-nav
+               li.dropdown(class="#{ current.source == 'index' || current.source == 'homepage-02' || current.source == 'homepage-03' ? 'active' : '' }")
+                  a.main-menu(data-toggle="dropdown", href="javascript:void(0)")
+                     | Home
+                  ul.dropdown-menu.edugate-dropdown-menu-1
+                     li
+                        a.link-page(href='index.html') Home page 01
+                     li
+                        a.link-page(href='homepage-02.html') Home page 02
+                     li
+                        a.link-page(href='homepage-03.html') Home page 03
+                     li
+                        a.link-page(href='login.html') login page
+                     li
+                        a.link-page(href='register.html') register page
+                     li
+                        a.link-page(href='404.html') 404 page
+               li.dropdown(class="#{ current.source == 'courses' || current.source == 'courses-detail' ? 'active' : '' }")
+                  a.main-menu(data-toggle="dropdown", href="javascript:void(0)")
+                     | Courses
+                  ul.dropdown-menu.edugate-dropdown-menu-1
+                     li
+                        a.link-page(href='courses.html') courses page
+                     li
+                        a.link-page(href='courses-detail.html') courses detail 2
+                     li
+                        a.link-page(href='courses-detail.html') courses detail 3
+                     li
+                        a.link-page(href='courses-detail.html') courses detail 4
+               li(class="#{ current.source == 'about-us' ? 'active' : '' }")
+                  a.main-menu(href="about-us.html")
+                     | about
+               li(class="#{ current.source == 'categories' ? 'active' : '' }")
+                  a.main-menu(href="categories.html")
+                     | categories
+               li.dropdown(class="#{ current.source == 'news' || current.source == 'news-detail' ? 'active' : '' }")
+                  a.main-menu(data-toggle="dropdown", href="javascript:void(0)")
+                     | News
+                  ul.dropdown-menu.edugate-dropdown-menu-1
+                     li
+                        a.link-page(href='news.html') news page
+                     li
+                        a.link-page(href='news-detail.html') news detail 2
+                     li
+                        a.link-page(href='news-detail.html') news detail 3
+                     li
+                        a.link-page(href='news-detail.html') news detail 4
+               li(class="#{ current.source == 'contact' ? 'active' : '' }")
+                  a.main-menu(href="contact.html")
+                     | Contact
+               li.button-search
+                  p.main-menu
+                     i.fa.fa-search
+            .nav-search.hide
+               form
+                  input.searchbox(type='text' placeholder='Search')
+                  button.searchbutton.fa.fa-search(type='submit')

@@ -1,0 +1,65 @@
+.section.background-opacity.page-title.set-height-top
+	.container
+		.page-title-wrapper
+			//.page-title-content
+			h2.captions
+				| course detail
+			ol.breadcrumb
+				li
+					a(href='index.html') Home
+				li
+					a(href='categories.html') Categories
+				li
+					a(href='courses.html') Courses
+				li.active
+					a(href='#') Courses Detail
+.section.search-input
+	.container
+		.search-input-wrapper
+			form
+				select.form-select.style-1
+					option(value='all') all categories
+					option(value='languages') languages
+					option(value='science') science
+				select.form-select.style-2
+					option(value='price') price
+					option(value='datetime') datetime
+					option(value='teacher') teacher
+				input.form-input(type='text', placeholder='Do you want to learn today?')
+				input.form-submit(type='submit' value='search now')
+.section.section-padding.courses-detail
+	.container
+		.courses-detail-wrapper
+			.row
+				.col-md-9.layout-left
+					!=partial("_includes/courses-detail")
+				.col-md-3.sidebar.layout-right
+					.row
+						.course-price-widget.widget.col-sm-6.col-md-12.col-xs-6.sd380
+							.title-widget
+								p 35
+							.content-widget
+								!=partial("_includes/course-info-widget")
+						.author-widget.widget.col-sm-6.col-md-12.col-xs-6.sd380
+							.title-widget
+								| about emma watson
+							.content-widget
+								!=partial("_includes/author-widget")
+						.clearfix
+						.popular-course-widget.widget.col-sm-6.col-md-12.col-xs-6.sd380
+							.title-widget
+								| popular courses
+							.content-widget
+								!=partial("_includes/popular-courses-widget")
+						.category-widget.widget.col-sm-6.col-md-12.col-xs-6.sd380
+							.title-widget
+								| categories
+							.content-widget
+								!=partial("_includes/categories-widget")
+						.clearfix
+						.tag-widget.widget.col-sm-6.col-md-12.col-xs-6.sd380
+							.title-widget
+								| tags
+							.content-widget
+								!=partial("_includes/tags-widget")
+						.clearfix
